@@ -1,6 +1,6 @@
 # Look, Listen and Infer
 
-This repo is pytorch implement for our paper "Look, Listen and Infer". More details and results can be seen in the [project page](xxxx).
+This repo is pytorch implement for our paper "Look, Listen and Infer". More details and results can be seen in the [project page](LLINet.github.io).
 
 
 
@@ -26,7 +26,7 @@ This repo is pytorch implement for our paper "Look, Listen and Infer". More deta
 
    <img src=".\img\dataset.jpg" alt="dataset" style="zoom:50%;" />
 
-3. You can download **INSTRUMENT_32CLASS** from [there](xxxx), and the directory structure shows as following:
+3. You can download **INSTRUMENT_32CLASS** from [there](https://drive.google.com/file/d/1O193VHG5FAmt8XRLyB4bZWyWE-KQoAQn/view?usp=sharing), and the directory structure shows as following:
 
   ```
   Dataset_32classes
