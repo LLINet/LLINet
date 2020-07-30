@@ -22,31 +22,6 @@ def normalizeFeature(x):
     return feat
 
 
-
-
-def func_attention(query, context, gamma1):  
-
-    batch_size = query.size(0)
-    ih, iw = context.size(2), context.size(3)
-    sourceL = ih * iw
-    image_features = context
-
-    context = context.view(batch_size, -1, sourceL)  
-    contextT = torch.transpose(context, 1, 2).contiguous() 
-
-
-    attn = torch.bmm(contextT, query) 
-    
-    attn = attn.view(batch_size, sourceL)    
-    score = attn.mean(1)
-    attn = attn * gamma1
-    attn = nn.Softmax(dim=1)(attn)
-    
-    attn = attn.view(batch_size, 1, sourceL)
-    return attn.view(batch_size, ih, iw) , score
-
-
-
 def attention(img_features, audios, args):
 
     batch_size = args.batch_size
@@ -139,17 +114,3 @@ def adjust_learning_rate(base_lr, lr_decay, optimizer, epoch):
     for param_group in optimizer.param_groups:
         param_group['lr'] = lr
 
-def load_progress(prog_pkl, quiet=False):
-
-    def _print(msg):
-        if not quiet:
-            print(msg)
-
-    with open(prog_pkl, "rb") as f:
-        prog = pickle.load(f)
-        epoch, global_step, best_epoch, best_avg_r10, _ = prog[-1]
-
-    _print("\nPrevious Progress:")
-    msg =  "[%5s %7s %5s %7s %6s]" % ("epoch", "step", "best_epoch", "best_avg_r10", "time")
-    _print(msg)
-    return prog, epoch, global_step, best_epoch, best_avg_r10

@@ -1,6 +1,6 @@
 # Look, Listen and Infer
 
-This repo is pytorch implement for our paper "Look, Listen and Infer". More details and results can be seen in the [project page](https://LLINet.github.io).
+This repo is pytorch implement for our paper "Look, Listen and Infer" published in ACM Multimedia 2020. More details and results can be seen in the [project page](https://LLINet.github.io).
 
 
 
@@ -111,7 +111,7 @@ This repo is pytorch implement for our paper "Look, Listen and Infer". More deta
      python run.py --mode sl --gamma_att 0.8
      #retrieval without evaluation
      python run.py --mode retrieval --eva no
-     #zsl localization with default setting
+     #zsl with default setting
      python run.py --mode zsl
      ```
 
