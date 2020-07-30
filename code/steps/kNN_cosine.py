@@ -1,11 +1,8 @@
-
-  
-from numpy import *  
 import operator  
 import math
 import tensorflow as tf
 import numpy as np
-
+from numpy import *  
 
 def createDataSet():  
 
