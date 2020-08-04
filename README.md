@@ -86,7 +86,7 @@ This repo is pytorch implement for our paper "Look, Listen and Infer" published 
 
    **Step 2 :** Fill folders with your datas
 
-   **Step 2 :** Run the `preprocessing_datafile.py` in `Dataset_32classes` folder to generate index files automatically：
+   **Step 3 :** Run the `preprocessing_datafile.py` in `Dataset_32classes` folder to generate index files automatically：
 
    ```powershell
    python preprocessing_datafile.py
