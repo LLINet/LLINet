@@ -122,12 +122,12 @@ This repo is pytorch implement for our paper "Look, Listen and Infer" published 
 ## Cite
 
 ```latex
-@inproceedings{arandjelovic2017look,
-  title={Look, listen and learn},
-  author={Arandjelovic, Relja and Zisserman, Andrew},
-  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
-  pages={609--617},
-  year={2017}
+@inproceedings{jia2020look,
+  title={Look, Listen and Infer},
+  author={Jia, Ruijian and Wang, Xinsheng and Pang, Shanmin and Zhu, Jihua and Xue, Jianru},
+  booktitle={Proceedings of the 28th ACM International Conference on Multimedia},
+  pages={3911--3919},
+  year={2020}
 }
 ```
 
