@@ -26,7 +26,7 @@ This repo is pytorch implement for our paper "Look, Listen and Infer" published 
 
    <img src=".\img\dataset.jpg" alt="dataset" style="zoom:50%;" />
 
-3. You can download **INSTRUMENT_32CLASS** from [there](https://drive.google.com/file/d/1O193VHG5FAmt8XRLyB4bZWyWE-KQoAQn/view?usp=sharing), and the directory structure shows as following:
+3. You can download **INSTRUMENT_32CLASS** from [here](https://drive.google.com/file/d/1O193VHG5FAmt8XRLyB4bZWyWE-KQoAQn/view?usp=sharing), and the directory structure shows as following:
 
   ```
   Dataset_32classes
@@ -119,7 +119,9 @@ This repo is pytorch implement for our paper "Look, Listen and Infer" published 
 
 
 
-## Cite
+## Citation
+
+If you find this work is useful to your research, please cite our paper:
 
 ```latex
 @inproceedings{jia2020look,
